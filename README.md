@@ -10,12 +10,14 @@
 7. "make flash" does not work with MKS Robin,run the following command: ./scripts/update_mks_robin.py out/klipper.bin out/Robin_nano.bin Copy the file out/Robin_nano.bin to an SD card and then restart the printer with that SD card.
 
 8. copy over printer.cfg which contains all pinouts to control printer as well as macros for calibration and setup
-9. setup extruder/Bed PID
-10. [Setup ZOffset/probe calibrate](https://github.com/Klipper3d/klipper/blob/master/docs/Probe_Calibrate.md)
-11. testprint
-12. [Setup pressure advance](https://github.com/Klipper3d/klipper/blob/master/docs/Pressure_Advance.md)
-13. testprint
-14. enjoy
+9. [verify all printer components and tune extruder/Bed PID](https://github.com/Klipper3d/klipper/blob/master/docs/Config_checks.md) 
+10. [Setup Extreuder Steps (if Not Stock)](https://www.klipper3d.org/Rotation_Distance.html)
+11. [Setup ZOffset/probe calibrate](https://github.com/Klipper3d/klipper/blob/master/docs/Probe_Calibrate.md)
+12. testprint
+13. [Setup pressure advance](https://github.com/Klipper3d/klipper/blob/master/docs/Pressure_Advance.md)
+14. testprint
+15. [setup Start and end Gcodes](https://allpro3d.com/quick-tip-start-and-end-gcode-in-klipper/)
+16. enjoy
 
 ## some commands used to get everything setup 
 sudo apt-get install git -y
