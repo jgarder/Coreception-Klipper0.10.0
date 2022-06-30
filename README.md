@@ -11,9 +11,9 @@
 
 8. copy over printer.cfg which contains all pinouts to control printer as well as macros for calibration and setup
 9. setup extruder/Bed PID
-10. Setup ZOffset
+10. [Setup ZOffset/probe calibrate](https://github.com/Klipper3d/klipper/blob/master/docs/Probe_Calibrate.md)
 11. testprint
-12. pressure advance
+12. [Setup pressure advance](https://github.com/Klipper3d/klipper/blob/master/docs/Pressure_Advance.md)
 13. testprint
 14. enjoy
 
@@ -27,3 +27,11 @@ sudo service klipper stop
 cd ~
 git clone https://github.com/th33xitus/kiauh.git
 ./kiauh/kiauh.sh
+
+
+##sources
+1. [copied a lot from this](https://www.reddit.com/r/coreception/comments/peyx17/fluidd_config_for_klipper_guide_and_also_just/)
+
+2. [beanisfat leaves a comment i use](https://www.reddit.com/r/coreception/comments/nhtl3p/klipper_tmc2208_config_for_stock_printer/)
+
+3. [more config discussion inclusing making 2208 uart and coreception](https://www.reddit.com/r/coreception/comments/k619b1/klipper_on_elfcoreception/)
