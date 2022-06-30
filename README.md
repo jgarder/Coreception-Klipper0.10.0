@@ -15,6 +15,7 @@
 11. [Setup ZOffset/probe calibrate](https://github.com/Klipper3d/klipper/blob/master/docs/Probe_Calibrate.md)
 12. testprint
 13. [Setup pressure advance](https://github.com/Klipper3d/klipper/blob/master/docs/Pressure_Advance.md)
+14. [Check your Resonance](https://github.com/Klipper3d/klipper/blob/master/docs/Resonance_Compensation.md)
 14. testprint
 15. [setup Start and end Gcodes](https://allpro3d.com/quick-tip-start-and-end-gcode-in-klipper/)
 16. enjoy
