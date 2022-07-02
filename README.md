@@ -11,7 +11,7 @@
 
 8. copy over printer.cfg which contains all pinouts to control printer as well as macros for calibration and setup
 9. [verify all printer components and tune extruder/Bed PID](https://github.com/Klipper3d/klipper/blob/master/docs/Config_checks.md) 
-10. [Setup Extreuder Steps (if Not Stock)](https://www.klipper3d.org/Rotation_Distance.html)
+10. [Setup Extruder Steps (if Not Stock)](https://www.klipper3d.org/Rotation_Distance.html)
 11. [Setup ZOffset/probe calibrate](https://github.com/Klipper3d/klipper/blob/master/docs/Probe_Calibrate.md)
 12. testprint
 13. [Setup pressure advance](https://github.com/Klipper3d/klipper/blob/master/docs/Pressure_Advance.md)
@@ -32,6 +32,15 @@ sudo service klipper stop
 cd ~
 git clone https://github.com/th33xitus/kiauh.git
 ./kiauh/kiauh.sh
+
+i ended up using spi 5 and needed these commands
+dtoverlay=spi5-1cs
+dtparameter=cs0_pin=12
+
+SHAPER_CALIBRATE
+
+~/klipper/scripts/calibrate_shaper.py /tmp/calibration_data_x*.csv -o /tmp/shaper_calibrate_x.png
+~/klipper/scripts/calibrate_shaper.py /tmp/calibration_data_y*.csv -o /tmp/shaper_calibrate_y.png
 
 
 ##sources
