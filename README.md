@@ -15,6 +15,7 @@
 11. [Setup ZOffset/probe calibrate](https://github.com/Klipper3d/klipper/blob/master/docs/Probe_Calibrate.md)
 12. testprint
 13. [Setup pressure advance](https://github.com/Klipper3d/klipper/blob/master/docs/Pressure_Advance.md)
+14. [Every Pres_adv change retune retraction (click here for FW_retract tuning)](https://www.reddit.com/r/klippers/comments/gxnxij/trying_different_retract_settings_with_tuning/)
 14. [setup the Rpi to ALSO be a secondary MCU for resonance testing](https://www.klipper3d.org/RPi_microcontroller.html)
 15. [Check your Resonance](https://github.com/Klipper3d/klipper/blob/master/docs/Resonance_Compensation.md)
 16. [Check resonance to check belt tension on coreXY machines](https://www.ifixit.com/Guide/Adding+ADXL345+Accelerometer/147745)
@@ -42,6 +43,7 @@ SHAPER_CALIBRATE
 ~/klipper/scripts/calibrate_shaper.py /tmp/calibration_data_x*.csv -o /tmp/shaper_calibrate_x.png
 ~/klipper/scripts/calibrate_shaper.py /tmp/calibration_data_y*.csv -o /tmp/shaper_calibrate_y.png
 
+TUNING_TOWER COMMAND=SET_RETRACTION PARAMETER=RETRACT_LENGTH START=0 FACTOR=0.05 #this test will test retract length from 0 to 5 on a 20mm tower
 
 ##sources
 1. [copied a lot from this](https://www.reddit.com/r/coreception/comments/peyx17/fluidd_config_for_klipper_guide_and_also_just/)
