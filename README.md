@@ -38,6 +38,9 @@ i ended up using spi 5 and needed these commands
 dtoverlay=spi5-1cs
 dtparameter=cs0_pin=12
 
+PID_CALIBRATE HEATER=extruder TARGET=170
+PID_CALIBRATE HEATER=heater_bed TARGET=60
+
 SHAPER_CALIBRATE
 
 ~/klipper/scripts/calibrate_shaper.py /tmp/calibration_data_x*.csv -o /tmp/shaper_calibrate_x.png
