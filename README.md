@@ -7,7 +7,7 @@
 4. compile klipper for your mcu which should be a MKS Robin Nano (v1.2.004) board on stock coreception. 
 5. run "make menuconfig", setup for the mcu STM32F103, enable "extra low-level configuration setup", select the 28KiB bootloader, and serial (on USART3 PB11/PB10) communication.
 6. run "make"
-7. "make flash" does not work with MKS Robin,run the following command: ./scripts/update_mks_robin.py out/klipper.bin out/Robin_nano.bin Copy the file out/Robin_nano.bin to an SD card and then restart the printer with that SD card.
+7. "make flash" does not work with MKS Robin,run the following command: ./scripts/update_mks_robin.py out/klipper.bin out/Robin_nano35.bin Copy the file out/Robin_nano35.bin to an SD card and then restart the printer with that SD card.
 
 8. copy over printer.cfg which contains all pinouts to control printer as well as macros for calibration and setup
 9. [verify all printer components and tune extruder/Bed PID](https://github.com/Klipper3d/klipper/blob/master/docs/Config_checks.md) 
