@@ -10,6 +10,7 @@
 7. "make flash" does not work with MKS Robin,run the following command: ./scripts/update_mks_robin.py out/klipper.bin out/Robin_nano35.bin Copy the file out/Robin_nano35.bin to an SD card and then restart the printer with that SD card.
 
 8. copy over printer.cfg which contains all pinouts to control printer as well as macros for calibration and setup
+9. [if your using ubuntu and cannot find your MCU path](https://unix.stackexchange.com/a/674936)
 9. [verify all printer components and tune extruder/Bed PID](https://github.com/Klipper3d/klipper/blob/master/docs/Config_checks.md) 
 10. [Setup Extruder Steps (if Not Stock)](https://www.klipper3d.org/Rotation_Distance.html)
 11. [Setup ZOffset/probe calibrate](https://github.com/Klipper3d/klipper/blob/master/docs/Probe_Calibrate.md)
@@ -56,3 +57,5 @@ TUNING_TOWER COMMAND=SET_RETRACTION PARAMETER=RETRACT_LENGTH START=0 FACTOR=0.05
 3. [more config discussion inclusing making 2208 uart and coreception](https://www.reddit.com/r/coreception/comments/k619b1/klipper_on_elfcoreception/)
 
 4. [GREAT klipper print tuning guide i found after doing all this](https://github.com/AndrewEllis93/Print-Tuning-Guide#extrusion-multiplier)
+
+5. [if your using ubuntu and cannot find your MCU path](https://unix.stackexchange.com/a/674936)
